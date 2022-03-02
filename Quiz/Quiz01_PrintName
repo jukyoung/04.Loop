@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Quiz01_PrintName {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+//		for (int i = 0; i >= 0; i++) {
+//			System.out.println("\n** 입장을 종료하려면 q를 입력하세요. **");
+//			System.out.print("닉네임을 입력해 주세요 >> ");
+//			String id = sc.nextLine();
+//			if (id.equals("manager")) {
+//				System.out.println("매니저님 오셨어요?");
+//				continue;
+//			}
+//			if (id.equals("q")) {
+//				break; // 프로그램 종료 == for문 종료
+//			} //else if(id.equals("manager")) {
+//			    //System.out.println("매니저님 오셨어요?");
+//			    //continue;
+//			   // }
+//
+//			System.out.println(i + " : " + id + "님 어서오세요!");
+//		}
+         //while 사용해서 해보기
+		while(true) {
+			System.out.println("\n** 입장을 종료하려면 q를 입력하세요. **");
+			System.out.print("닉네임을 입력해 주세요 >> ");
+			String id = sc.nextLine();
+			
+			if (id.equals("q")) {
+				break;
+			} else if(id.equals("manager")) {
+			    System.out.println("매니저님 오셨어요?");
+			    continue;
+			    }
+
+			System.out.println(id + "님 어서오세요!");
+		}
+		
+	}
+}
